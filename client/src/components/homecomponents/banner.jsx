@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 
 const Banner = () => {
     return (
@@ -65,12 +66,14 @@ const Banner = () => {
                     </div>
                      </div>
                      <div className="flex gap-4 mt-6">
-                <button  
+                <NavLink to="/profile/dashboard">
+                <button 
           className={` p-2 text-white  font-semibold rounded-full  bg-[#F42A41] cursor-pointer
           w-44 h-12
           md:w-52 md:h-12
           xl:w-36 xl:h-12
-           `}> Let's Get Started </button>
+           `}> Go to Profile </button>
+                </NavLink>
                 <button  
           className={` text-white  font-semibold rounded-full  bg-[#992af4] cursor-pointer
           w-40 h-12

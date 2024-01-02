@@ -51,7 +51,7 @@ const Menu = () => {
                   
                 </NavLink>
                 <NavLink  
-                to="/profile"  
+                to="/profile/dashboard"  
                 className={({ isActive, isPending }) =>
                     isPending ? "" : isActive ? " bg-red-500 rounded-lg  text-white font-semibold" : "  bg-white rounded-lg font-semibold"
                 }>

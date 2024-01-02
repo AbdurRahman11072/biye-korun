@@ -1,6 +1,7 @@
 import React from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 import DashboardLayout from '../Layout/dashboardLayout'
+import MainLayout from '../Layout/mainlayout'
 import ProfileLayout from '../Layout/profilelayout'
 import SearchPage from '../Page/Search'
 import Chat from '../Page/chat'
@@ -8,11 +9,14 @@ import ErrorPage from '../Page/error'
 import Home from '../Page/home'
 import Profile from '../Page/profile'
 import Dashboard from '../components/profile/dashboard'
+import Message from '../components/profile/massage'
+import Post from '../components/profile/post'
+import Request from '../components/profile/request'
 
 const Routes = createBrowserRouter([
     {
         path:"/",
-        element:<DashboardLayout></DashboardLayout>,
+        element:<MainLayout></MainLayout>,
         errorElement:<ErrorPage></ErrorPage>,
         children:[
             {
@@ -41,7 +45,27 @@ const Routes = createBrowserRouter([
             },
             {
                 path:"dashboard",
-                element:<Dashboard></Dashboard>
+                element:<DashboardLayout></DashboardLayout>,
+                children:[
+                    {
+                        path:"/profile/dashboard",
+                        element:<Dashboard></Dashboard>
+                    },
+                    {
+                        path:"/profile/dashboard/request",
+                        element:<Request></Request>
+                    },
+                    {
+                        path:"/profile/dashboard/post",
+                        element:<Post></Post>
+                    },
+                    {
+                        path:"/profile/dashboard/message",
+                        element:<Message></Message>
+                    }
+                ]
+              
+                
             }
         ]
         

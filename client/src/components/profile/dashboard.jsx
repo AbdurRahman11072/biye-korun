@@ -1,10 +1,11 @@
 import React from 'react'
+import Friends from './friend'
 
 const Dashboard = () => {
+
     return (
-        <div className='flex flex-wrap lg:mx-5 w-full '>
-            <ProfileCard></ProfileCard>
-            <MatchedBride></MatchedBride>
+        <div>
+            <Friends></Friends>
         </div>
     )
 }

@@ -1,5 +1,6 @@
-import { Heart, Search } from 'lucide-react'
+import { BookUser, Heart, Search } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const MatchedBride = () => {
     const [match, setmatch] = useState()
@@ -14,6 +15,7 @@ const MatchedBride = () => {
         py-5 px-2
         bg-gray-100  lg:mx-4 lg:p-5 font-inter lg:w-[500px] 
         xl:w-[830px] '>
+
             <div className='flex flex-wrap gap-10'>
                 <h1 className=' lg:text-xl xl:text-3xl font-extrabold flex-1'>Matches Information</h1>
                 <div className='relative  '>
@@ -24,6 +26,58 @@ const MatchedBride = () => {
                        <div className='absolute top-0 right-0 bg-red-500 w-10  h-[38px] mt-[2px] rounded-md px-[7px] py-[6px] text-white'><Search></Search></div>
                     </div>
             </div>
+
+            <div className='my-10 border-b-[2px] border-gray-200 flex '>
+            <NavLink  
+                to="/profile/dashboard"  
+                className={({ isActive, isPending }) =>
+                    isPending ? "" : isActive ? " text-purple-600 border-b-[3px] border-purple-600 font-semibold" : "  bg-white rounded-lg font-semibold"
+                }>
+                      <div className=' items-center flex gap-2  rounded-lg  px-3 py-5 justify-center
+                      lg:px-10 lg:py-3'>
+                      <BookUser />
+                <h1>Friends</h1>
+            </div>
+                  
+            </NavLink>
+            <NavLink  
+                to="/profile/dashboard"  
+                className={({ isActive, isPending }) =>
+                    isPending ? "" : isActive ? "  rounded-lg   font-semibold" : "  bg-white rounded-lg font-semibold"
+                }>
+                      <div className='items-center  flex gap-2  rounded-lg  px-3 py-5 justify-center
+                      lg:px-10 lg:py-3'>
+                      <BookUser />
+                <h1>Request</h1>
+            </div>
+                  
+            </NavLink>
+            <NavLink  
+                to="/profile/dashboard"  
+                className={({ isActive, isPending }) =>
+                    isPending ? "" : isActive ? "  rounded-lg   font-semibold" : "  bg-white rounded-lg font-semibold"
+                }>
+                      <div className=' items-center  flex gap-2  rounded-lg  px-3 py-5 justify-center
+                      lg:px-10 lg:py-3'>
+                      <BookUser />
+                <h1>Massage</h1>
+            </div>
+                  
+            </NavLink>
+            <NavLink  
+                to="/profile/dashboard"  
+                className={({ isActive, isPending }) =>
+                    isPending ? "" : isActive ? "  rounded-lg   font-semibold" : "  bg-white rounded-lg font-semibold"
+                }>
+                      <div className=' items-center  flex gap-2  rounded-lg  px-3 py-5 justify-center
+                      lg:px-10 lg:py-3'>
+                      <BookUser />
+                <h1>Posts</h1>
+            </div>
+                  
+            </NavLink>
+            </div>
+
             <div className='py-10 flex flex-wrap justify-center gap-5'>
                 {
                     match?.map(bride =>(
