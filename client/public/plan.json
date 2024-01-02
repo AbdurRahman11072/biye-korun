@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "offer": "Free",
+    "taka": 0,
+    "plan": [
+      { "plan": "Search Profile" },
+      { "plan": "Shortlist & Send Request" },
+      { "plan": "View Photo Album" },
+      { "plan": "Chat & Messaging" },
+      { "plan": "View Contact Information" },
+      { "plan": "Priority Likes" },
+      { "plan": "24/7 Customer Support" }
+    ]
+  },
+  {
+    "id": 2,
+    "offer": "Monthly",
+    "taka": 500,
+    "plan": [
+      { "plan": "Search Profile" },
+      { "plan": "Shortlist & Send Request" },
+      { "plan": "View Photo Album" },
+      { "plan": "Chat & Messaging" },
+      { "plan": "View Contact Information" },
+      { "plan": "Priority Likes" },
+      { "plan": "Boost Profile" },
+      { "plan": "Group Chat" },
+      { "plan": "24/7 Customer Support" }
+    ]
+  },
+  {
+    "id": 3,
+    "offer": "Limited",
+    "taka": 1200,
+    "plan": [
+      { "plan": "Search Profile" },
+      { "plan": "Shortlist & Send Request" },
+      { "plan": "View Photo Album" },
+      { "plan": "Chat & Messaging" },
+      { "plan": "View Contact Information" },
+      { "plan": "Priority Likes" },
+      { "plan": "Boost Profile" },
+      { "plan": "Group Chat" },
+      { "plan": "Blue Mark" },
+      { "plan": "Boost Profile" },
+      { "plan": "24/7 Customer Support" }
+    ]
+  }
+]
